@@ -18,11 +18,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Properties;
 
-/**
- * Created by Andrew.Burtnett on 9/2/15.
- * <p/>
- * This Config Class will join the vert.x cluster and create a bean to be used in elsewhere.
- */
 @Configuration
 @ComponentScan(basePackages = "vxdl")
 public class VertxConfig {

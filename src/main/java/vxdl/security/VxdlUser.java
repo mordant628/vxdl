@@ -10,11 +10,6 @@ import org.slf4j.Logger;
 
 import static org.slf4j.LoggerFactory.getLogger;
 
-/**
- * User:  Shane Muffat
- * Date:  10/1/15
- * Time:  1:46 PM
- */
 public class VxdlUser extends AbstractUser {
 
     private String collabToken;
