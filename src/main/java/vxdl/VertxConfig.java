@@ -70,8 +70,8 @@ public class VertxConfig {
         int count = 0;
         while (vertx == null) {
             logger.info("Sleeping for 1000 ms because vertx has yet to start.");
-            Thread.sleep(100);
-            count += 100;
+            Thread.sleep(1000);
+            count += 1000;
             if (count > timeout) {
                 logger.warn("Uh oh.  Something isn't quite right.  Vertx has taken longer than it should have.  " +
                             "Time taken: {} ms  VertxStartupTimeout: {} ms", count, timeout);

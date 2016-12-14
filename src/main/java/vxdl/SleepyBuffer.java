@@ -29,9 +29,14 @@ public class SleepyBuffer implements Buffer {
 
     public String toString(){
         try{
-            long sleepMillis = 3000;
-            LOGGER.warn("SLEEPING for "+sleepMillis+"ms");
-            Thread.sleep(sleepMillis);
+            long sleepMillis = 7500;
+            LOGGER.warn("SLEEPING for ~"+sleepMillis+"ms");
+            for(int i = 1 + new java.util.Random().nextInt(7) ; i >= 0 ;i--){
+                Thread.sleep(1111);
+                LOGGER.warn(".");
+                Thread.yield();
+            }
+            LOGGER.warn("WOKE UP and continuing on...");
         }catch(InterruptedException ignored){
             //noop
         }
